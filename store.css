@@ -130,9 +130,6 @@ h1 {
     border-radius: 0;
 	
 }
-#logo {
-	display:none;
-}
 #MiniShopCartProductAdded, #quick_cart_container {
     box-shadow: 0 0px 10px 0 rgba(0,0,0,0.3);
 }
@@ -377,6 +374,9 @@ div.info_table, .listTable {
 }
 #headerRow1 {
     height: auto;
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
 }
 #orderItemDisplay {
     padding: 0;
@@ -426,9 +426,6 @@ div.info_table, .listTable {
     height: 16px;
     outline: none;
 }
-#searchBar {
-    top: 15px;
-}
 .departmentMenu {
     border: 0 none;
     border-bottom: 2px solid #e6e6e6;
@@ -477,12 +474,100 @@ div.info_table, .listTable {
 .departmentMenu>li>a {
 	color:#75809e;
 }
+/* OG 19-11-17 */
+.wrap_dskt {
+	max-width: 1300px;
+	margin: 0 auto;
+	position: relative;
+}
+ #logo .contentRecommendationWidget>#ci_espot__HeaderStoreLogo_Content>.left_espot>a>img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+#logo {
+   	width: 240px;
+    padding: 14px 0;
+    box-sizing: border-box;
+}
+div#drop_down_ {
+    width: calc(100% - 240px);
+    margin-left: 240px;
+}
+/* ESTILOS PARA LAS PLANTILLAS HTML */
+		.wrap_link {
+			position: relative;
+		    display: inline-block;
+		    margin-right: 150px;
+		}
+
+		.link_buy {
+			position: relative;
+    		padding: 0 0 14px;
+    		font-size: 14px;
+    		line-height: 24px;
+    		letter-spacing: 1px;
+    		color:#fff;
+    		text-decoration: none;
+    		text-align: left;
+    		font-size: 18px;
+    		line-height: 28px;
+    		letter-spacing: 1px;
+		}
+		.link_buy:before {
+			position: absolute;
+			content: '';
+			width: 40px;
+			height: 5px;
+			left: 0;
+    		bottom: 0;
+    		display: block;
+			-webkit-transition: all .5s ease;
+    		transition: all .5s ease;
+    		background-color: #fff;
+		}
+		.link_buy:hover:before {
+			width: 100%;
+		}
+		.img_bkg {
+			width: 100%;
+			height: calc(100vh - 110px);
+			background-image: url('../../AvatarCAS/banner/splash-desktop.jpg');
+			background-repeat: no-repeat;
+    		background-size: cover;
+    		background-position: top center;
+		}
+		.img_bkg img {
+			display: block;
+			
+		}
+		.menu_link {
+			position: absolute;
+			top:50%;
+			left: 0;
+			width: 100%;
+			text-align: center;
+		}
+		.wrap_banner {
+			position: relative;
+			width: 100%;
+		}
+		.menu_link .wrap_link:last-child {
+			margin-right: 0;
+		}
+/* FINAL DE ESTILOS DE PLANTILLAS HTML */
 /******* RESPONSIVE *********/
+@media (min-width: 1281px) {
+	.rowContainer, .rowContainer>.row {
+	    padding:0;
+	}
+}
 @media (min-width: 1025px){
 	.departmentMenu {
 	    width: 100%;
 	    box-sizing: border-box;
-	    top:74px;
+	    top:56px;
 	}
 	.categoryList>li {
     	width: 25%;
